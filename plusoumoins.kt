@@ -1,5 +1,7 @@
 import java.util.*
 
+
+
 fun main()
 {
     for(i in 0 until 3) /*Essaie limite nb de chance */
@@ -20,7 +22,7 @@ fun main()
                 }
             else if (nb_entre > nb_secret)
                 {
-                    if(i==3) /* condition du for*/
+                    if(i==9)
                     {
                         if (nb_entre in nb_secret..nb_secret + 5)
                             {
@@ -48,7 +50,7 @@ fun main()
                 {
                     if (i==9)
                     {
-                        if (nb_entre in nb_secret..nb_secret - 5)
+                        if (nb_entre in nb_secret - 5..nb_secret)
                         {
                             println("Trop petit. Mais tu y est presque, dernier essaie ! ")
                         }
@@ -61,7 +63,7 @@ fun main()
 
                     else
                     {
-                        if (nb_entre in nb_secret..nb_secret - 5)
+                        if (nb_entre in nb_secret - 5..nb_secret)
                             {
                                 println("Trop petit. Mais tu y est presque ! ")
                             }
